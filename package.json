@@ -1,0 +1,33 @@
+{
+	"name": "nd-sequelize",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "cross-env NODE_ENV=development nodemon index.js --watch server",
+		"predev": "fuser -k 8087/tcp && echo 'Terminated' || echo 'Nothing was running on the 8087'"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/seriiserii825/nd-sequelize.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/seriiserii825/nd-sequelize/issues"
+	},
+	"homepage": "https://github.com/seriiserii825/nd-sequelize#readme",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"body-parser": "^1.20.0",
+		"colors": "^1.4.0",
+		"cookie-parser": "^1.4.6",
+		"cross-env": "^7.0.3",
+		"jsonwebtoken": "^8.5.1",
+		"mysql2": "^2.3.3",
+		"nodemon": "^2.0.19",
+		"sequelize": "^6.21.3",
+		"sequelize-cli": "^6.4.1"
+	}
+}

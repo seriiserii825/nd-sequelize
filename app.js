@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 8087;
 
 //routes
 const productRoutes = require('./routes/product.routes');
+const studentRoutes = require('./routes/student.routes');
 
 app.use(express.json());
 app.use(bodyParser.json());
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use('/', productRoutes);
+app.use('/', studentRoutes);
 
 app.get('/', (req, res) => {
 	return res.json({
